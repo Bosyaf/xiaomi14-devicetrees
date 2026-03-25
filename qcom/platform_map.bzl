@@ -658,6 +658,34 @@ _platform_map = {
             {"name": "volcano6i-mtp-STSafe320-brahma-overlay.dtbo"},
         ],
     },
+    "shennong": {
+        "dtb_list": [
+            # keep sorted
+            {"name": "pineapple-v2.dtb"},
+            {
+                "name": "pineapplep-v2.dtb",
+                "apq": True,
+            },
+        ],
+        "dtbo_list": [
+            # keep sorted
+            {"name": "shennong-sm8650-overlay.dtbo"},
+        ],
+    },
+    "houji": {
+        "dtb_list": [
+            # keep sorted
+            {"name": "pineapple-v2.dtb"},
+            {
+                "name": "pineapplep-v2.dtb",
+                "apq": True,
+            },
+        ],
+        "dtbo_list": [
+            # keep sorted
+            {"name": "houji-sm8650-overlay.dtbo"},
+        ],
+    },
 }
 
 def _get_dtb_lists(target, dt_overlay_supported):
