@@ -250,6 +250,16 @@ _platform_map = {
             {"name": "neo_luna-v2-sg-idp-pm8008-overlay.dtbo"},
         ],
     },
+    "neo": {
+        "dtb_list": [
+            {"name": "neo.dtb"},
+        ],
+        "dtbo_list": [
+            {"name": "neo-rumi-overlay.dtbo"},
+            {"name": "neo-sg-idp-hmt-overlay.dtbo"},
+            {"name": "neo-sg-idp-pm8008-overlay.dtbo"},
+        ],
+    },
     "anorak": {
         "dtb_list": [
             {"name": "anorak.dtb"},
