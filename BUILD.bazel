@@ -6,9 +6,11 @@ kernel_dtstree(
         [
             "Makefile",
             "qcom/Makefile",
+            "qcom/**/Makefile",
             "qcom/**/*.dtsi",
             "qcom/**/*.dts",
             "bindings/**/*",
+            "qcom/**/bindings/**/*",
         ],
         exclude = [
             "**/.*",
