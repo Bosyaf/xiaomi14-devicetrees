@@ -5,6 +5,7 @@
 #define SHENNONG_HOUJI_REGULATOR_OCP
 #include "houji-pinctrl.dtsi"
 #include "xiaomi-sm8650-common.dtsi"
+#include <dt-bindings/phy/qcom,usb3-4nm-qmp-combo.h>
 
 &pm8550b_gpios {
 	charger_therm0 {

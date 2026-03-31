@@ -22,6 +22,7 @@
 #include <dt-bindings/interconnect/qcom,icc.h>
 #include <dt-bindings/regulator/qcom,rpmh-regulator-levels.h>
 #include <dt-bindings/spmi/spmi.h>
+#include <dt-bindings/phy/qcom,usb3-4nm-qmp-combo.h>
 #include <dt-bindings/power/qcom-aoss-qmp.h>
 #include <dt-bindings/clock/qcom,aop-qmp.h>
 /*statellite config */
@@ -861,7 +862,7 @@
 
 &soc {
 	thermal-message {
- 		board-sensor = "VIRTUAL-SENSOR0";
+		board-sensor = "VIRTUAL-SENSOR0";
 	};
 };
 &usb0 {
