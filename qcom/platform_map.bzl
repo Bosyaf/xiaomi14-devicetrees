@@ -683,6 +683,7 @@ _platform_map = {
         ],
         "dtbo_list": [
             # keep sorted
+            {"name": "houji-sm8650-camera-sensor.dtbo"},
             {"name": "houji-sm8650-overlay.dtbo"},
         ],
     },
