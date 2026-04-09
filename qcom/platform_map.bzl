@@ -690,6 +690,9 @@ _platform_map = {
             {"name": "pineapple-dsp.dtbo"},
             {"name": "pineapple-eva.dtbo"},
             {"name": "pineapple-eva-v2.dtbo"},
+            {"name": "pineapple-gpu.dtbo"},
+            {"name": "pineapple-v2-gpu.dtbo"},
+            {"name": "pineapple-v2-sg-gpu.dtbo"},
         ],
     },
 }
