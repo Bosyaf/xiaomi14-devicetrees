@@ -20,6 +20,10 @@ kernel_dtstree(
             "**/*.bazel",
             "**/*.bzl",
         ],
-    ),
+    ) + [
+           "//vendor/qcom/opensource/audio-kernel:audio_common_headers",
+           "//vendor/qcom/opensource/camera-kernel:camera_src_headers",
+           "//vendor/qcom/opensource/synx-kernel:synx_headers",
+    ],
     visibility = ["//visibility:public"],
 )
