@@ -687,6 +687,7 @@ _platform_map = {
             {"name": "houji-sm8650-audio.dtbo"},
             {"name": "houji-sm8650-camera-sensor.dtbo"},
             {"name": "houji-sm8650-overlay.dtbo"},
+            {"name": "pineapple-dsp.dtbo"},
         ],
     },
 }
