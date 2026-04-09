@@ -703,6 +703,8 @@ _platform_map = {
             {"name": "pineapple-ubwcp.dtbo"},
             {"name": "pineapple-v2-gpu.dtbo"},
             {"name": "pineapple-v2-sg-gpu.dtbo"},
+            {"name": "pineapple-vidc.dtbo"},
+            {"name": "pineapple-vidc-v2.dtbo"},
         ],
     },
 }
