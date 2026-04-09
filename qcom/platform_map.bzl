@@ -697,6 +697,7 @@ _platform_map = {
             {"name": "pineapple-kiwi-cnss.dtbo"},
             {"name": "pineapple-mm-mtp-overlay.dtbo"},
             {"name": "pineapple-mmrm.dtbo"},
+            {"name": "pineapple-nfc-mtp.dtbo"},
             {"name": "pineapple-v2-gpu.dtbo"},
             {"name": "pineapple-v2-sg-gpu.dtbo"},
         ],
