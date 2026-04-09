@@ -684,6 +684,7 @@ _platform_map = {
         "dtbo_list": [
             # keep sorted
             {"name": "houji-sde-display-mtp-overlay.dtbo"},
+            {"name": "houji-sm8650-audio.dtbo"},
             {"name": "houji-sm8650-camera-sensor.dtbo"},
             {"name": "houji-sm8650-overlay.dtbo"},
         ],

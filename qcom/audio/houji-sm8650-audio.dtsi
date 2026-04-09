@@ -1,0 +1,120 @@
+#include "pineapple-audio-overlay.dtsi"
+
+&fm_i2s1_gpios {
+	status = "ok";
+};
+
+&pineapple_snd {
+	qcom,sec-mi2s-gpios = <&fm_i2s1_gpios>;
+};
+
+cs35l41_0: cs35l41@40 {
+    compatible = "cirrus,cs35l41";
+    reg = <0x40>;
+    status = "ok";
+    cirrus,i2c-addr = <0x28>;
+    sound-name-prefix = "B";
+    cirrus,right-channel-amp;
+    
+    cirrus,asp-sdout-hiz = <3>;
+    cirrus,boost-cap-microfarad = <15>;
+    cirrus,boost-ind-nanohenry = <1000>;
+    cirrus,boost-peak-milliamp = <4000>;
+    cirrus,temp-warn_threshold = <3>;
+    
+    cirrus,fast-switch = "B-music.txt", "B-handfree.txt";
+    
+    interrupt-parent = <&tlmm>;
+    interrupts = <98 0x2008>; 
+    reset-gpios = <&tlmm 85 0>;
+    
+    cirrus,gpio-config2 {
+        cirrus,gpio-output-enable;
+        cirrus,gpio-src-select = <4>;
+    };
+
+    pinctrl-names = "default";
+    pinctrl-0 = <&cirrus_reset_default_0 &cirrus_irq_default_0>;
+};
+
+cs35l41_1: cs35l41@42 {
+    compatible = "cirrus,cs35l41";
+    reg = <0x42>;
+    status = "ok";
+    cirrus,i2c-addr = <0x2a>;
+    sound-name-prefix = "T";
+    
+    cirrus,asp-sdout-hiz = <3>;
+    cirrus,boost-cap-microfarad = <15>;
+    cirrus,boost-ind-nanohenry = <1000>;
+    cirrus,boost-peak-milliamp = <4000>;
+    cirrus,temp-warn_threshold = <3>;
+    
+    cirrus,fast-switch = "T-music.txt", "T-handset.txt", "T-handfree.txt";
+    
+    interrupt-parent = <&tlmm>;
+    interrupts = <99 0x2008>; 
+    reset-gpios = <&tlmm 111 0>;
+    
+    cirrus,gpio-config2 {
+        cirrus,gpio-output-enable;
+        cirrus,gpio-src-select = <4>;
+    };
+
+    pinctrl-names = "default";
+    pinctrl-0 = <&cirrus_reset_default_1 &cirrus_irq_default_1>;
+};
+
+&tlmm {
+    cirrus_reset_default_0: cirrus_reset_default_0 {
+        mux {
+            pins = "gpio85";
+            function = "gpio";
+        };
+        config {
+            pins = "gpio85";
+            drive-strength = <16>; /* 0x10 hex = 16mA */
+            bias-disable;
+            output-high;
+        };
+    };
+
+    cirrus_irq_default_0: cirrus_irq_default_0 {
+        mux {
+            pins = "gpio98";
+            function = "gpio";
+        };
+        config {
+            pins = "gpio98";
+            drive-strength = <2>;
+            bias-pull-up;
+            input-enable;
+        };
+    };
+
+    cirrus_reset_default_1: cirrus_reset_default_1 {
+        mux {
+            pins = "gpio111";
+            function = "gpio";
+        };
+        config {
+            pins = "gpio111";
+            drive-strength = <16>;
+            bias-disable;
+            output-high;
+        };
+    };
+
+    cirrus_irq_default_1: cirrus_irq_default_1 {
+        mux {
+            pins = "gpio99";
+            function = "gpio";
+        };
+        config {
+            pins = "gpio99";
+            drive-strength = <2>;
+            bias-pull-up;
+            input-enable;
+        };
+    };
+};
