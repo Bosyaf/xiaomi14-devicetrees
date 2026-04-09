@@ -688,6 +688,8 @@ _platform_map = {
             {"name": "houji-sm8650-camera-sensor.dtbo"},
             {"name": "houji-sm8650-overlay.dtbo"},
             {"name": "pineapple-dsp.dtbo"},
+            {"name": "pineapple-eva.dtbo"},
+            {"name": "pineapple-eva-v2.dtbo"},
         ],
     },
 }
