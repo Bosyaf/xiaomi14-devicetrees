@@ -692,6 +692,7 @@ _platform_map = {
             {"name": "pineapple-eva-v2.dtbo"},
             {"name": "pineapple-gpu.dtbo"},
             {"name": "pineapple-hw-fence.dtbo"},
+            {"name": "pineapple-ipa.dtbo"},
             {"name": "pineapple-mm-mtp-overlay.dtbo"},
             {"name": "pineapple-v2-gpu.dtbo"},
             {"name": "pineapple-v2-sg-gpu.dtbo"},
