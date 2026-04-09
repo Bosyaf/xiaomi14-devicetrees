@@ -7,6 +7,8 @@ kernel_dtstree(
             "Makefile",
             "qcom/Makefile",
             "qcom/**/Makefile",
+            "qcom/**/Kbuild",
+            "qcom/**/*.mk",
             "qcom/**/*.dtsi",
             "qcom/**/*.dts",
             "bindings/**/*",
