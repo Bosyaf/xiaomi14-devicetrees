@@ -1,0 +1,4 @@
+// Common include bridge
+#include "pineapple-pmic-overlay.dtsi"
+#include "nfc/nxp/pineapple-nfc-pinctrl.dtsi"
+#include "audio/pineapple-audio.dtsi"
