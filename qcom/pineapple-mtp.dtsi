@@ -3,6 +3,14 @@
 #include <dt-bindings/clock/qcom,gcc-pineapple.h>
 #include "pineapple-pmic-overlay.dtsi"
 #include "pineapple-thermal-overlay.dtsi"
+#include "pineapple-regulators.dtsi"
+#include "pineapple-gdsc.dtsi"
+#include "pineapple-pinctrl.dtsi"
+#include "houji-pinctrl.dtsi"
+#include "camera/pineapple-camera.dtsi"
+#include "audio/pineapple-audio.dtsi"
+#include "audio/houji-sm8650-audio.dtsi"
+#include "display/pineapple-sde-display.dtsi"
 
 &sdhc_2 {
 	status = "ok";
